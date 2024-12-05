@@ -1,0 +1,142 @@
+/* Reset basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+}
+
+/* Container for the quiz */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Question Display */
+.question {
+    font-size: 2rem;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Option buttons styling */
+.options button {
+    width: 45%;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.options button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+/* Scoreboard style */
+.score-board {
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.score-board p {
+    font-size: 1.3rem;
+}
+
+/* Control buttons (Start, Close) */
+.controls button {
+    width: 45%;
+    padding: 10px 0;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Settings section */
+.settings {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.settings label {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.settings input[type="radio"],
+.settings input[type="number"] {
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    text-align: center;
+}
+
+.settings input[type="number"]:focus {
+    border-color: #4facfe;
+}
+
+/* Style for inputs when disabled */
+.settings input:disabled {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Custom number input for the custom range */
+#custom-range {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#custom-range input {
+    width: 48%;
+}
+
+@media (max-width: 600px) {
+    .options button, .controls button {
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    #custom-range input {
+        width: 45%;
+    }
+}
